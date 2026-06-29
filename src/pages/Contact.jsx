@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { Helmet } from 'react-helmet-async'
 import { useReveal } from '../hooks/useReveal'
+import Seo from '../components/Seo'
 import PageHero from '../components/PageHero'
+import { contactSchema } from '../lib/schema'
 
 function ContactForm() {
   const [status, setStatus] = useState('idle')
@@ -68,11 +69,12 @@ export default function Contact() {
   const ref = useReveal()
   return (
     <div ref={ref}>
-      <Helmet>
-        <title>Contact VelivoHR — Start a Conversation About Your Next Hire</title>
-        <meta name="description" content="Tell VelivoHR about the role you're hiring for. We'll come back with a plan, not a pitch — within one business day." />
-        <link rel="canonical" href="https://www.velivohr.ai/contact/" />
-      </Helmet>
+      <Seo
+        title="Contact VelivoHR — Hire for Your Marcom Team"
+        description="Share your open role with VelivoHR — advertising, media, marketing or communications. We respond within one business day with a plan tailored to your brief."
+        canonical="https://www.velivohr.ai/contact/"
+        schema={contactSchema}
+      />
 
       <PageHero
         eyebrow="Get In Touch"

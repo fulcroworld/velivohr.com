@@ -1,8 +1,9 @@
-import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
+import Seo from '../components/Seo'
 import PageHero from '../components/PageHero'
 import Accordion from '../components/Accordion'
+import { guaranteeSchema } from '../lib/schema'
 
 const ACCORDION_ITEMS = [
   {
@@ -54,11 +55,12 @@ export default function Guarantee() {
   const ref = useReveal()
   return (
     <div ref={ref}>
-      <Helmet>
-        <title>Our Placement Guarantee &amp; Terms — VelivoHR</title>
-        <meta name="description" content="A 90-day protection window and a free replacement on every placement, paired with the terms that keep the process fair for everyone." />
-        <link rel="canonical" href="https://www.velivohr.ai/guarantee/" />
-      </Helmet>
+      <Seo
+        title="Placement Guarantee & Terms — VelivoHR"
+        description="90-day guarantee on every marcom placement — one free replacement, clearly defined exclusions, and client obligations. Read the full terms."
+        canonical="https://www.velivohr.ai/guarantee/"
+        schema={guaranteeSchema}
+      />
 
       <PageHero
         eyebrow="Our Commitment"

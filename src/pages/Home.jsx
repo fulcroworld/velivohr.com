@@ -1,16 +1,18 @@
-import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
+import Seo from '../components/Seo'
+import { homeSchema } from '../lib/schema'
 
 export default function Home() {
   const ref = useReveal()
   return (
     <div ref={ref}>
-      <Helmet>
-        <title>VelivoHR — Specialist Recruitment for the Marcom Industry</title>
-        <meta name="description" content="VelivoHR pairs a structured, real-time hiring process with decades of hands-on experience across advertising, media, marketing and communications — so you hire faster, hire better, and spend less." />
-        <link rel="canonical" href="https://www.velivohr.ai/" />
-      </Helmet>
+      <Seo
+        title="VelivoHR — Specialist Recruitment for the Marcom Industry"
+        description="VelivoHR pairs a structured hiring process with decades of insider experience across advertising, media, marketing and communications — hire faster, hire better, spend less."
+        canonical="https://www.velivohr.ai/"
+        schema={homeSchema}
+      />
 
       {/* HERO */}
       <section className="hero">

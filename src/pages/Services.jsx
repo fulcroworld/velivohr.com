@@ -1,17 +1,19 @@
-import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
+import Seo from '../components/Seo'
 import PageHero from '../components/PageHero'
+import { servicesSchema } from '../lib/schema'
 
 export default function Services() {
   const ref = useReveal()
   return (
     <div ref={ref}>
-      <Helmet>
-        <title>Recruitment Services for Marcom Organizations — VelivoHR</title>
-        <meta name="description" content="From sourcing and screening to offer management, VelivoHR runs the full recruitment cycle for advertising, media, marketing and communications organizations — end to end." />
-        <link rel="canonical" href="https://www.velivohr.ai/services/" />
-      </Helmet>
+      <Seo
+        title="Recruitment Services for Marcom Organizations — VelivoHR"
+        description="End-to-end recruitment for advertising, media, marketing and communications — sourcing, screening, background checks, interview coordination, and offer management."
+        canonical="https://www.velivohr.ai/services/"
+        schema={servicesSchema}
+      />
 
       <PageHero
         eyebrow="What We Handle"

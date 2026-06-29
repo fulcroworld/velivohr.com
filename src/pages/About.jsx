@@ -1,17 +1,19 @@
-import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
+import Seo from '../components/Seo'
 import PageHero from '../components/PageHero'
+import { aboutSchema } from '../lib/schema'
 
 export default function About() {
   const ref = useReveal()
   return (
     <div ref={ref}>
-      <Helmet>
-        <title>About VelivoHR — Marcom Industry Recruitment Specialists</title>
-        <meta name="description" content="VelivoHR is built by two leaders who've sat on both sides of the hiring table across advertising, media, marketing and communications. Meet the team." />
-        <link rel="canonical" href="https://www.velivohr.ai/about/" />
-      </Helmet>
+      <Seo
+        title="About VelivoHR — Marcom Recruitment Specialists with Insider Experience"
+        description="VelivoHR is founded by two leaders with decades inside advertising, media, marketing and communications. Deep domain knowledge — not keyword matching — is how we recruit."
+        canonical="https://www.velivohr.ai/about/"
+        schema={aboutSchema}
+      />
 
       <PageHero
         eyebrow="Our Story"

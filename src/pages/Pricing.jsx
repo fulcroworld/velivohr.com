@@ -1,17 +1,19 @@
-import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
+import Seo from '../components/Seo'
 import PageHero from '../components/PageHero'
+import { pricingSchema } from '../lib/schema'
 
 export default function Pricing() {
   const ref = useReveal()
   return (
     <div ref={ref}>
-      <Helmet>
-        <title>Recruitment Pricing — VelivoHR</title>
-        <meta name="description" content="Transparent, success-fee pricing calibrated to seniority — from entry-level to senior leadership hires across the marcom industry." />
-        <link rel="canonical" href="https://www.velivohr.ai/pricing/" />
-      </Helmet>
+      <Seo
+        title="Recruitment Pricing — VelivoHR Marcom Hiring Fees"
+        description="Transparent success-fee pricing: 5% for entry and mid-level, 8.33% for senior leadership. No retainer, no hidden charges — you pay only when we deliver."
+        canonical="https://www.velivohr.ai/pricing/"
+        schema={pricingSchema}
+      />
 
       <PageHero
         eyebrow="Fee Structure"

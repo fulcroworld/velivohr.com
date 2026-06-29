@@ -1,17 +1,19 @@
-import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
+import Seo from '../components/Seo'
 import PageHero from '../components/PageHero'
+import { processSchema } from '../lib/schema'
 
 export default function Process() {
   const ref = useReveal()
   return (
     <div ref={ref}>
-      <Helmet>
-        <title>Our Hiring Process &amp; Methodology — VelivoHR</title>
-        <meta name="description" content="A structured blend of process and human judgment: how VelivoHR moves from intake to offer acceptance, fast — without cutting corners on quality." />
-        <link rel="canonical" href="https://www.velivohr.ai/process/" />
-      </Helmet>
+      <Seo
+        title="Our Recruitment Process & Methodology — VelivoHR"
+        description="5-step marcom recruitment process: intake, sourcing, structured interviews, offer management, and onboarding support — built for speed without compromising quality."
+        canonical="https://www.velivohr.ai/process/"
+        schema={processSchema}
+      />
 
       <PageHero
         eyebrow="How We Work"
