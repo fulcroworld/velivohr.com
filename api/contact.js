@@ -57,10 +57,10 @@ module.exports = async function handler(req, res) {
     },
   });
 
-  const toAddress = CONTACT_TO || 'debolina@velivohr.ai';
+  const toAddress = CONTACT_TO || 'debolina@velivohr.com';
 
   const html = `
-    <h2>New enquiry from velivohr.ai</h2>
+    <h2>New enquiry from velivohr.com</h2>
     <p><strong>Name:</strong> ${escapeHtml(name)}</p>
     <p><strong>Email:</strong> ${escapeHtml(email)}</p>
     <p><strong>Company:</strong> ${escapeHtml(company || '—')}</p>

@@ -83,7 +83,7 @@ still fails.
   `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`, `CONTACT_TO`
   (values are in the local `.env` file). Redeploy after adding them.
 - `sitemap.xml`, `robots.txt`, and all canonical/OG tags currently assume
-  `https://www.velivohr.ai/` — update if the real production domain differs.
+  `https://www.velivohr.com/` — update if the real production domain differs.
 
 ## Running locally
 
@@ -116,7 +116,7 @@ form locally, or just test it after deploying.
 
 - SMTP auth failure above — needs the user to fix on the Azure side.
 - No live deployment yet.
-- Domain placeholder (`velivohr.ai`) needs confirming once a real domain is chosen.
+- Domain placeholder (`velivohr.com`) needs confirming once a real domain is chosen.
 - General UI/UX pass requested by the user is in progress — they flagged "inner
   pages has very bad UI and issues" broadly, of which the guarantee header contrast
   was one concrete instance fixed. Worth doing a fuller visual pass across

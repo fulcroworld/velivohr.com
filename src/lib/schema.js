@@ -1,4 +1,4 @@
-const SITE = 'https://www.velivohr.ai'
+const SITE = 'https://www.velivohr.com'
 const ORG_ID = `${SITE}/#org`
 const SITE_ID = `${SITE}/#website`
 
@@ -11,7 +11,7 @@ const org = {
   description: 'Specialist recruitment for the advertising, media, marketing and communications (marcom) industry in India.',
   areaServed: 'IN',
   serviceType: 'Recruitment Agency',
-  email: 'debolina@velivohr.ai',
+  email: 'debolina@velivohr.com',
   founder: [
     { '@type': 'Person', '@id': `${SITE}/#gokul`, name: 'Gokul Krishnamurthy' },
     { '@type': 'Person', '@id': `${SITE}/#debolina`, name: 'Debolina Das' },
@@ -216,7 +216,7 @@ export const contactSchema = {
         '@id': ORG_ID,
         contactPoint: {
           '@type': 'ContactPoint',
-          email: 'debolina@velivohr.ai',
+          email: 'debolina@velivohr.com',
           contactType: 'sales',
           areaServed: 'IN',
           availableLanguage: 'English',
