@@ -11,7 +11,7 @@ export default function Pricing() {
       <Seo
         title="Recruitment Pricing — VelivoHR Marcom Hiring Fees"
         description="Transparent success-fee pricing: 5% for entry and mid-level, 8.33% for senior leadership. No retainer, no hidden charges — you pay only when we deliver."
-        canonical="https://www.velivohr.ai/pricing/"
+        canonical="https://www.velivohr.com/pricing/"
         schema={pricingSchema}
       />
 

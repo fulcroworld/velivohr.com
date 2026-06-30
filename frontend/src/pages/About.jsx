@@ -11,7 +11,7 @@ export default function About() {
       <Seo
         title="About VelivoHR — Marcom Recruitment Specialists with Insider Experience"
         description="VelivoHR is founded by two leaders with decades inside advertising, media, marketing and communications. Deep domain knowledge — not keyword matching — is how we recruit."
-        canonical="https://www.velivohr.ai/about/"
+        canonical="https://www.velivohr.com/about/"
         schema={aboutSchema}
       />
 

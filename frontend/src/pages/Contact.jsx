@@ -103,7 +103,7 @@ export default function Contact() {
       <Seo
         title="Contact VelivoHR — Hire for Your Marcom Team"
         description="Share your open role with VelivoHR — advertising, media, marketing or communications. We respond within one business day with a plan tailored to your brief."
-        canonical="https://www.velivohr.ai/contact/"
+        canonical="https://www.velivohr.com/contact/"
         schema={contactSchema}
       />
 
@@ -126,7 +126,7 @@ export default function Contact() {
                 <div className="v">Co-Founder &amp; MD</div>
                 <div className="k">Email</div>
                 <div className="v">
-                  <a href="mailto:debolina@velivohr.ai">debolina@velivohr.ai</a>
+                  <a href="mailto:debolina@velivohr.com">debolina@velivohr.com</a>
                 </div>
               </div>
               <div className="section-head" style={{ marginBottom: 0 }}>

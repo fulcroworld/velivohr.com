@@ -105,7 +105,7 @@ export default function Guarantee() {
       <Seo
         title="Placement Guarantee & Terms — VelivoHR"
         description="90-day guarantee on every marcom placement — one free replacement, clearly defined exclusions, and client obligations. Read the full terms."
-        canonical="https://www.velivohr.ai/guarantee/"
+        canonical="https://www.velivohr.com/guarantee/"
         schema={guaranteeSchema}
       />
 

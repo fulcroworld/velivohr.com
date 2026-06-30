@@ -10,7 +10,7 @@ export default function Home() {
       <Seo
         title="VelivoHR — Specialist Recruitment for the Marcom Industry"
         description="VelivoHR pairs a structured hiring process with decades of insider experience across advertising, media, marketing and communications — hire faster, hire better, spend less."
-        canonical="https://www.velivohr.ai/"
+        canonical="https://www.velivohr.com/"
         schema={homeSchema}
       />
 

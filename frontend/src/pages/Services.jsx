@@ -11,7 +11,7 @@ export default function Services() {
       <Seo
         title="Recruitment Services for Marcom Organizations — VelivoHR"
         description="End-to-end recruitment for advertising, media, marketing and communications — sourcing, screening, background checks, interview coordination, and offer management."
-        canonical="https://www.velivohr.ai/services/"
+        canonical="https://www.velivohr.com/services/"
         schema={servicesSchema}
       />
 

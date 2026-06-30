@@ -11,7 +11,7 @@ export default function Process() {
       <Seo
         title="Our Recruitment Process & Methodology — VelivoHR"
         description="5-step marcom recruitment process: intake, sourcing, structured interviews, offer management, and onboarding support — built for speed without compromising quality."
-        canonical="https://www.velivohr.ai/process/"
+        canonical="https://www.velivohr.com/process/"
         schema={processSchema}
       />
 
