@@ -14,7 +14,7 @@ const org = {
   serviceType: "Recruitment Agency",
   email: "debolina@velivohr.com",
   founder: [
-    { "@type": "Person", "@id": `${SITE}/#gokul`, name: "Gokul Krishnamurthy" },
+    { "@type": "Person", "@id": `${SITE}/#gokul`, name: "Gokul Krishnamoorthy" },
     { "@type": "Person", "@id": `${SITE}/#debolina`, name: "Debolina Das" },
   ],
 };
@@ -60,7 +60,7 @@ export const aboutSchema = {
     {
       "@type": "Person",
       "@id": `${SITE}/#gokul`,
-      name: "Gokul Krishnamurthy",
+      name: "Gokul Krishnamoorthy",
       jobTitle: "Director, VelivoHR",
       worksFor: { "@id": ORG_ID },
       description:

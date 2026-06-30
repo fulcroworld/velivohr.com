@@ -117,10 +117,10 @@ export default function About() {
               <div className="avatar">
                 <img
                   src="/assets/Gokul_sq.jpg"
-                  alt="Gokul Krishnamurthy, Director, VelivoHR"
+                  alt="Gokul Krishnamoorthy, Director, VelivoHR"
                 />
               </div>
-              <h3>Gokul Krishnamurthy</h3>
+              <h3>Gokul Krishnamoorthy</h3>
               <div className="role">Director, VelivoHR</div>
               <p>
                 Gokul brings over two decades of insider experience across
