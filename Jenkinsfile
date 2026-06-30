@@ -5,7 +5,7 @@ pipeline {
     environment {
         DEPLOY_APP = "${params.DEPLOY_APP}" // frontend
         GH_PAT = credentials('ibsf-devops-gh-bot-pat')
-        GH_ORG_REPO = "fulcroworld/velivohr.com.git"
+        GH_ORG_REPO = "fulcroworld/velivohr.com"
         GH_BRANCH = "dev-harshad"
         DOCKER_PROJECT = "velivo-hr"
     }
