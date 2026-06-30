@@ -1,12 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout'
-import Home from './pages/Home'
-import About from './pages/About'
-import Services from './pages/Services'
-import Process from './pages/Process'
-import Pricing from './pages/Pricing'
-import Guarantee from './pages/Guarantee'
-import Contact from './pages/Contact'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Process from "./pages/Process";
+import Pricing from "./pages/Pricing";
+import Guarantee from "./pages/Guarantee";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
@@ -23,5 +23,5 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }

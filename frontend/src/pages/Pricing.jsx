@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom'
-import { useReveal } from '../hooks/useReveal'
-import Seo from '../components/Seo'
-import PageHero from '../components/PageHero'
-import { pricingSchema } from '../lib/schema'
+import { Link } from "react-router-dom";
+import { useReveal } from "../hooks/useReveal";
+import Seo from "../components/Seo";
+import PageHero from "../components/PageHero";
+import { pricingSchema } from "../lib/schema";
 
 export default function Pricing() {
-  const ref = useReveal()
+  const ref = useReveal();
   return (
     <div ref={ref}>
       <Seo
@@ -30,35 +30,55 @@ export default function Pricing() {
               <div className="tier">Entry-Level</div>
               <div className="fee">5%</div>
               <div className="fee-label">of Gross Annual CTC</div>
-              <div className="range"><span>CTC Range</span>Up to INR 6 Lakhs</div>
+              <div className="range">
+                <span>CTC Range</span>Up to INR 6 Lakhs
+              </div>
             </div>
             <div className="price-card reveal d1">
               <div className="tier">Mid-Level</div>
               <div className="fee">5%</div>
               <div className="fee-label">of Gross Annual CTC</div>
-              <div className="range"><span>CTC Range</span>INR 6 – 18 Lakhs</div>
+              <div className="range">
+                <span>CTC Range</span>INR 6 – 18 Lakhs
+              </div>
             </div>
             <div className="price-card featured reveal d2">
               <div className="price-badge">Senior Leadership</div>
               <div className="tier">Senior-Level</div>
               <div className="fee grad-text">8.33%</div>
               <div className="fee-label">of Gross Annual CTC</div>
-              <div className="range"><span>CTC Range</span>Above INR 18 Lakhs</div>
+              <div className="range">
+                <span>CTC Range</span>Above INR 18 Lakhs
+              </div>
             </div>
           </div>
           <div className="price-foot reveal">
-            <div className="foot-note"><b>Billing &amp; Taxes</b>Fees are calculated on Gross Annual CTC, including fixed and guaranteed bonuses — exclusive of 18% GST and other applicable taxes.</div>
-            <div className="foot-note"><b>Introduction Protection</b>If a candidate we introduce is engaged by the client or an affiliate within 12 months of introduction, the full placement fee remains payable.</div>
+            <div className="foot-note">
+              <b>Billing &amp; Taxes</b>Fees are calculated on Gross Annual CTC,
+              including fixed and guaranteed bonuses — exclusive of 18% GST and
+              other applicable taxes.
+            </div>
+            <div className="foot-note">
+              <b>Introduction Protection</b>If a candidate we introduce is
+              engaged by the client or an affiliate within 12 months of
+              introduction, the full placement fee remains payable.
+            </div>
           </div>
-          <p style={{ marginTop: '46px' }}><Link to="/guarantee" className="btn btn-line">See what's covered by our guarantee →</Link></p>
+          <p style={{ marginTop: "46px" }}>
+            <Link to="/guarantee" className="btn btn-line">
+              See what's covered by our guarantee →
+            </Link>
+          </p>
         </div>
       </section>
 
-      <section className="next" style={{ padding: '0 0 110px' }}>
-        <div className="wrap" style={{ textAlign: 'center' }}>
-          <Link to="/contact" className="btn btn-primary">Start a Conversation</Link>
+      <section className="next" style={{ padding: "0 0 110px" }}>
+        <div className="wrap" style={{ textAlign: "center" }}>
+          <Link to="/contact" className="btn btn-primary">
+            Start a Conversation
+          </Link>
         </div>
       </section>
     </div>
-  )
+  );
 }

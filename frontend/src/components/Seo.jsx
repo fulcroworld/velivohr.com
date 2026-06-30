@@ -1,7 +1,7 @@
-import { Helmet } from 'react-helmet-async'
+import { Helmet } from "react-helmet-async";
 
-const SITE_URL = 'https://www.velivohr.ai'
-const OG_IMAGE = `${SITE_URL}/assets/VelioHRlogo.png`
+const SITE_URL = "https://www.velivohr.ai";
+const OG_IMAGE = `${SITE_URL}/assets/VelioHRlogo.png`;
 
 export default function Seo({ title, description, canonical, schema }) {
   return (
@@ -33,5 +33,5 @@ export default function Seo({ title, description, canonical, schema }) {
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       )}
     </Helmet>
-  )
+  );
 }
