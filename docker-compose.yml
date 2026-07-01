@@ -4,6 +4,8 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    networks:
+      - velivo_hr_network
     ports:
       - "5007:5000"
     env_file:
@@ -15,6 +17,8 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    networks:
+      - velivo_hr_network
     ports:
       - "3017:5173"
     env_file:
@@ -22,3 +26,8 @@ services:
     depends_on:
       - backend
     restart: always
+
+networks:
+  velivo_hr_network:
+    external: true
+    name: bridge
