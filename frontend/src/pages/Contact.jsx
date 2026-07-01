@@ -20,11 +20,14 @@ function ContactForm() {
       message: form.message.value.trim(),
     };
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const res = await fetch(
+        `${import.meta.env.VITE_API_ENDPOINT}/submit-contact-form`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        },
+      );
       const data = await res.json().catch(() => ({}));
       if (res.ok && data.ok) {
         setStatus("ok");
@@ -126,7 +129,9 @@ export default function Contact() {
                 <div className="v">Co-Founder &amp; MD</div>
                 <div className="k">Email</div>
                 <div className="v">
-                  <a href="mailto:debolina@velivohr.com">debolina@velivohr.com</a>
+                  <a href="mailto:debolina@velivohr.com">
+                    debolina@velivohr.com
+                  </a>
                 </div>
               </div>
               <div className="section-head" style={{ marginBottom: 0 }}>

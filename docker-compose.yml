@@ -1,12 +1,24 @@
 services:
-  frontend:
-    network_mode: bridge
-    container_name: "velivo-hr"
+  backend:
+    container_name: "velivo-hr-backend"
     build:
-      context: .
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3018:5000"
+    env_file:
+      - .env
+    restart: always
+
+  frontend:
+    container_name: "velivo-hr-frontend"
+    build:
+      context: ./frontend
       dockerfile: Dockerfile
     ports:
       - "3017:5173"
     env_file:
       - .env
+    depends_on:
+      - bakcend
     restart: always
