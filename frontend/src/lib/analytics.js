@@ -3,6 +3,8 @@ const PRODUCTION_HOSTNAMES = ["velivohr.com", "www.velivohr.com"];
 export function initAnalytics() {
   if (!PRODUCTION_HOSTNAMES.includes(window.location.hostname)) return;
 
+  console.log(window.location.hostname);
+
   const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
   const script = document.createElement("script");
