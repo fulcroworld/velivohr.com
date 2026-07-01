@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        DEPLOY_APP = "${params.DEPLOY_APP}" // frontend
+        DEPLOY_APP = "${params.DEPLOY_APP}" // backend / frontend
         GH_PAT = credentials('ibsf-devops-gh-bot-pat')
         GH_ORG_REPO = "fulcroworld/velivohr.com"
         GH_BRANCH = "dev-harshad"
