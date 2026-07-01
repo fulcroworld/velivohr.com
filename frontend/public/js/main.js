@@ -106,14 +106,14 @@ if (contactForm) {
         },
       );
       const data = await res.json().catch(() => ({}));
-      if (res.ok && data.ok) {
+      if (res.ok) {
         msgEl.textContent =
           "Thanks — your message is on its way. We'll get back to you shortly.";
         msgEl.classList.add("show", "ok");
         contactForm.reset();
       } else {
         throw new Error(
-          data.error || "Something went wrong. Please try again.",
+          data.message || "Something went wrong. Please try again.",
         );
       }
     } catch (err) {

@@ -29,12 +29,12 @@ function ContactForm() {
         },
       );
       const data = await res.json().catch(() => ({}));
-      if (res.ok && data.ok) {
+      if (res.ok) {
         setStatus("ok");
         form.reset();
       } else
         throw new Error(
-          data.error || "Something went wrong. Please try again.",
+          data.message || "Something went wrong. Please try again.",
         );
     } catch (err) {
       setStatus("error");

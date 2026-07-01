@@ -13,7 +13,7 @@ serverless function for the contact form.
 ## Stack
 
 - Vite 6 (multi-page static build, no frontend framework/JS framework — vanilla HTML/CSS/JS)
-- Plain CSS (`public/assets/styles.css`) + plain JS (`public/assets/main.js`), shared across all pages
+- Plain CSS (`public/css/styles.css`) + plain JS (`public/js/main.js`), shared across all pages
 - Vercel for hosting: static pages + one serverless function (`api/contact.js`)
 - `nodemailer` for sending contact-form emails via Azure Communication Services SMTP
 
@@ -30,7 +30,9 @@ site/
   contact/index.html      Contact info + working contact form
   api/contact.js          Vercel serverless function — sends form submissions via SMTP
   public/
-    assets/                styles.css, main.js, logos, team photos (served at /assets/...)
+    css/                  styles.css
+    images/               logos, team photos (served at /images/...)
+    js/                   main.js
     sitemap.xml, robots.txt
   vite.config.js          Multi-page build config (7 HTML entry points)
   package.json             scripts: dev / build / preview; deps: nodemailer; devDep: vite
@@ -41,7 +43,7 @@ site/
 ```
 
 Every page shares the same `<header>`/mobile-nav/footer markup and links to
-`/assets/styles.css` + `/assets/main.js` via root-absolute paths (these resolve
+`/css/styles.css` + `/js/main.js` via root-absolute paths (these resolve
 because `public/` is copied to the build root by Vite).
 
 ## Content rules already applied (don't reintroduce these)

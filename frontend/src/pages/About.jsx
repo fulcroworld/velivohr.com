@@ -116,7 +116,7 @@ export default function About() {
             <div className="team-card reveal">
               <div className="avatar">
                 <img
-                  src="/assets/Gokul_sq.jpg"
+                  src="/images/Gokul_sq.jpg"
                   alt="Gokul Krishnamoorthy, Director, VelivoHR"
                 />
               </div>
@@ -141,7 +141,7 @@ export default function About() {
             <div className="team-card reveal d1">
               <div className="avatar">
                 <img
-                  src="/assets/Debolina_sq.jpg"
+                  src="/images/Debolina_sq.jpg"
                   alt="Debolina Das, Director, VelivoHR"
                 />
               </div>

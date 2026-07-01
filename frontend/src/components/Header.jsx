@@ -37,12 +37,12 @@ export default function Header() {
         <div className="wrap nav">
           <Link to="/" className="brand">
             <img
-              src="/assets/VelioHRlogo.png"
+              src="/images/VelioHRlogo.png"
               className="logo-dark"
               alt="VelivoHR"
             />
             <img
-              src="/assets/VelioHRlogoW.png"
+              src="/images/VelioHRlogoW.png"
               className="logo-white"
               alt="VelivoHR"
             />

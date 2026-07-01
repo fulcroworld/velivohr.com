@@ -7,14 +7,18 @@ const org = {
   "@id": ORG_ID,
   name: "VelivoHR",
   url: SITE,
-  logo: `${SITE}/assets/VelioHRlogo.png`,
+  logo: `${SITE}/images/VelioHRlogo.png`,
   description:
     "Specialist recruitment for the advertising, media, marketing and communications (marcom) industry in India.",
   areaServed: "IN",
   serviceType: "Recruitment Agency",
   email: "debolina@velivohr.com",
   founder: [
-    { "@type": "Person", "@id": `${SITE}/#gokul`, name: "Gokul Krishnamoorthy" },
+    {
+      "@type": "Person",
+      "@id": `${SITE}/#gokul`,
+      name: "Gokul Krishnamoorthy",
+    },
     { "@type": "Person", "@id": `${SITE}/#debolina`, name: "Debolina Das" },
   ],
 };

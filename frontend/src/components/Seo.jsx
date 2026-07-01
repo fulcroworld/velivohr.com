@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 const SITE_URL = "https://www.velivohr.com";
-const OG_IMAGE = `${SITE_URL}/assets/VelioHRlogo.png`;
+const OG_IMAGE = `${SITE_URL}/images/VelioHRlogo.png`;
 
 export default function Seo({ title, description, canonical, schema }) {
   return (
