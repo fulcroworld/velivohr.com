@@ -20,5 +20,5 @@ services:
     env_file:
       - .env
     depends_on:
-      - bakcend
+      - backend
     restart: always
